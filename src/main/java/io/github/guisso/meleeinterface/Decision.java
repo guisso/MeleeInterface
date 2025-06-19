@@ -49,14 +49,6 @@ public enum Decision {
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Getters/Setters">
-    public int getValue() {
-        return value;
-    }
-
-    public String getInformation() {
-        return information;
-    }
-
     public static Decision byValue(int value) {
         for (Decision decision : Decision.values()) {
             if (decision.getValue() == value) {
@@ -65,5 +57,14 @@ public enum Decision {
         }
         throw new IllegalArgumentException("Invalid value " + value);
     }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getInformation() {
+        return information;
+    }
+
     //</editor-fold>
 }
