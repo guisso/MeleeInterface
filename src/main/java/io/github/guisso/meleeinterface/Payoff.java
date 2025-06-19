@@ -48,14 +48,6 @@ public enum Payoff {
     //</editor-fold>
 
     //<editor-fold defaultstate="collapsed" desc="Getters/Setters">
-    public int getValue() {
-        return value;
-    }
-
-    public String getInformation() {
-        return information;
-    }
-
     public static Payoff byValue(int value) {
         for (Payoff payoff : Payoff.values()) {
             if (payoff.getValue() == value) {
@@ -63,6 +55,14 @@ public enum Payoff {
             }
         }
         throw new IllegalArgumentException("Invalid value " + value);
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getInformation() {
+        return information;
     }
     //</editor-fold>
 
