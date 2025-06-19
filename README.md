@@ -16,5 +16,5 @@ Prisoner's Dilemma Interface
 
 ## Player interface for melee combat
 
-![Player interface for melee combat](src/main/resources/decision.png)
+![Player interface for melee combat](src/main/resources/iplayer.png)
 
