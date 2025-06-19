@@ -24,8 +24,11 @@
 package io.github.guisso.meleeinterface;
 
 /**
+ * Possible decisions on Prisoner's Dilemma
  *
  * @author Luis Guisso &lt;luis.guisso at ifnmg.edu.br&gt;
+ * @version 0.1
+ * @since 0.1, 2025-03-11
  */
 public enum Decision {
     // On the first decision-making
@@ -38,11 +41,14 @@ public enum Decision {
     public final int value;
     public final String information;
 
+    //<editor-fold defaultstate="collapsed" desc="Constructors">
     Decision(int value, String information) {
         this.value = value;
         this.information = information;
     }
+    //</editor-fold>
 
+    //<editor-fold defaultstate="collapsed" desc="Getters/Setters">
     public int getValue() {
         return value;
     }
@@ -59,4 +65,5 @@ public enum Decision {
         }
         throw new IllegalArgumentException("Invalid value " + value);
     }
+    //</editor-fold>
 }
